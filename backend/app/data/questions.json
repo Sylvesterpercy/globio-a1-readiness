@@ -1,0 +1,126 @@
+[
+  {
+    "id": "V01",
+    "skill": "vocabulary",
+    "topic": "food",
+    "question_text": "What does the German word 'der Apfel' mean?",
+    "options": {"A": "Orange", "B": "Apple", "C": "Banana", "D": "Bread"},
+    "correct_answer": "B",
+    "explanation": "'Der Apfel' means 'the apple' in German.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "V02",
+    "skill": "vocabulary",
+    "topic": "greetings",
+    "question_text": "What does 'Guten Morgen' mean?",
+    "options": {"A": "Good night", "B": "Good evening", "C": "Good morning", "D": "Goodbye"},
+    "correct_answer": "C",
+    "explanation": "'Guten Morgen' is the German greeting for 'Good morning'.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "V03",
+    "skill": "vocabulary",
+    "topic": "places",
+    "question_text": "What does 'die Schule' mean?",
+    "options": {"A": "Hospital", "B": "Library", "C": "School", "D": "Market"},
+    "correct_answer": "C",
+    "explanation": "'Die Schule' means 'the school' in German.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "V04",
+    "skill": "vocabulary",
+    "topic": "daily_activities",
+    "question_text": "What does 'trinken' mean?",
+    "options": {"A": "To eat", "B": "To sleep", "C": "To drink", "D": "To walk"},
+    "correct_answer": "C",
+    "explanation": "'Trinken' means 'to drink' in German.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "G01",
+    "skill": "grammar",
+    "topic": "articles",
+    "question_text": "Choose the correct article: ___ Frau ist nett.",
+    "options": {"A": "Der", "B": "Die", "C": "Das", "D": "Den"},
+    "correct_answer": "B",
+    "explanation": "'Frau' (woman) is feminine, so it takes the definite article 'die'.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "G02",
+    "skill": "grammar",
+    "topic": "verb_conjugation",
+    "question_text": "Complete the sentence: Ich ___ aus Indien.",
+    "options": {"A": "komme", "B": "kommst", "C": "kommt", "D": "kommen"},
+    "correct_answer": "A",
+    "explanation": "'Kommen' conjugated for 'ich' (I) is 'komme'.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "G03",
+    "skill": "grammar",
+    "topic": "pronouns",
+    "question_text": "Choose the correct pronoun: ___ heißt Maria.",
+    "options": {"A": "Ich", "B": "Du", "C": "Sie", "D": "Wir"},
+    "correct_answer": "C",
+    "explanation": "'Sie' (she) is the correct pronoun for a woman named Maria.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "G04",
+    "skill": "grammar",
+    "topic": "prepositions",
+    "question_text": "Complete the sentence: Das Buch ist ___ dem Tisch.",
+    "options": {"A": "in", "B": "auf", "C": "mit", "D": "bei"},
+    "correct_answer": "B",
+    "explanation": "'Auf' means 'on', so 'Das Buch ist auf dem Tisch' means 'The book is on the table'.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "R01",
+    "skill": "reading",
+    "topic": "text_comprehension",
+    "question_text": "How old is Anna?",
+    "passage": "Hallo! Ich heiße Anna. Ich bin 22 Jahre alt und komme aus Berlin. Ich arbeite in einem Café. Am Wochenende spiele ich gern Fußball.",
+    "options": {"A": "20", "B": "21", "C": "22", "D": "23"},
+    "correct_answer": "C",
+    "explanation": "The text says 'Ich bin 22 Jahre alt', meaning Anna is 22 years old.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "R02",
+    "skill": "reading",
+    "topic": "text_comprehension",
+    "question_text": "Where does Anna work?",
+    "passage": "Hallo! Ich heiße Anna. Ich bin 22 Jahre alt und komme aus Berlin. Ich arbeite in einem Café. Am Wochenende spiele ich gern Fußball.",
+    "options": {"A": "In a school", "B": "In a café", "C": "In a hospital", "D": "In a library"},
+    "correct_answer": "B",
+    "explanation": "The text says 'Ich arbeite in einem Café', meaning Anna works in a café.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "R03",
+    "skill": "reading",
+    "topic": "text_comprehension",
+    "question_text": "When does the party begin?",
+    "passage": "Liebe Maria, am Samstag mache ich eine kleine Party. Die Party beginnt um 18 Uhr. Wir essen Pizza und hören Musik. Kannst du kommen? Liebe Grüße, Lisa.",
+    "options": {"A": "16:00", "B": "17:00", "C": "18:00", "D": "19:00"},
+    "correct_answer": "C",
+    "explanation": "The text says 'Die Party beginnt um 18 Uhr', meaning the party starts at 18:00.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "R04",
+    "skill": "reading",
+    "topic": "text_comprehension",
+    "question_text": "What will the guests eat at the party?",
+    "passage": "Liebe Maria, am Samstag mache ich eine kleine Party. Die Party beginnt um 18 Uhr. Wir essen Pizza und hören Musik. Kannst du kommen? Liebe Grüße, Lisa.",
+    "options": {"A": "Pasta", "B": "Salad", "C": "Burger", "D": "Pizza"},
+    "correct_answer": "D",
+    "explanation": "The text says 'Wir essen Pizza', meaning the guests will eat pizza.",
+    "difficulty": "beginner"
+  }
+]
