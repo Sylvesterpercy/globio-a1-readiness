@@ -53,9 +53,15 @@ function CircleScore({ score }) {
 export default function Results() {
   const location = useLocation()
   const navigate = useNavigate()
-  const results = location.state?.results
 
-  if (!results) {
+  // Persist results across browser refreshes using sessionStorage as fallback
+  const routeResults = location.state?.results
+  if (routeResults) {
+    sessionStorage.setItem('globio_results', JSON.stringify(routeResults))
+  }
+  const resolvedResults = routeResults ?? JSON.parse(sessionStorage.getItem('globio_results'))
+
+  if (!resolvedResults) {
     return (
       <div className="min-h-screen flex flex-col bg-slate-50">
         <Navbar />
@@ -74,7 +80,7 @@ export default function Results() {
     )
   }
 
-  const { overall_score, readiness_status, total_questions, correct_answers, incorrect_answers, skills, recommendations } = results
+  const { overall_score, readiness_status, total_questions, correct_answers, incorrect_answers, skills, recommendations } = resolvedResults
   const statusConfig = STATUS_CONFIG[readiness_status] || STATUS_CONFIG['Needs More Practice']
 
   return (
@@ -157,7 +163,10 @@ export default function Results() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            onClick={() => navigate('/assessment', { replace: true })}
+            onClick={() => {
+              sessionStorage.removeItem('globio_results')
+              navigate('/assessment', { replace: true })
+            }}
             className="flex items-center justify-center gap-2 border-2 border-slate-200 text-slate-700 rounded-xl px-6 py-3 font-semibold hover:bg-slate-50 transition-colors"
           >
             <RotateCcw className="w-5 h-5" /> Retake Assessment

@@ -1,17 +1,10 @@
-from pydantic import BaseModel, field_validator
-from typing import List
+from typing import Literal, List
+from pydantic import BaseModel
 
 
 class AnswerItem(BaseModel):
     question_id: str
-    selected_option: str
-
-    @field_validator('selected_option')
-    @classmethod
-    def validate_option(cls, v):
-        if v not in ('A', 'B', 'C', 'D'):
-            raise ValueError('selected_option must be A, B, C, or D')
-        return v
+    selected_option: Literal["A", "B", "C", "D"]
 
 
 class SubmissionRequest(BaseModel):

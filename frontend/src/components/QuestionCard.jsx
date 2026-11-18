@@ -5,7 +5,7 @@ export default function QuestionCard({ question, selectedAnswer, onSelect }) {
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 sm:p-8">
       {question.passage && (
-        <blockquote className="mb-6 p-4 bg-slate-50 border-l-4 border-blue-400 rounded-r-xl text-slate-700 text-sm leading-relaxed italic">
+        <blockquote className="mb-6 p-4 bg-slate-50 border-l-4 border-blue-400 rounded-r-xl text-slate-700 text-sm leading-relaxed italic break-words overflow-hidden">
           {question.passage}
         </blockquote>
       )}

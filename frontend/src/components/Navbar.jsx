@@ -13,7 +13,7 @@ export default function Navbar() {
             </div>
             <div>
               <span className="font-bold text-slate-900 text-lg">Globio</span>
-              <span className="ml-2 text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">GERMAN A1 • READINESS CHECK</span>
+              <span className="ml-2 text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full hidden sm:inline">GERMAN A1 • READINESS CHECK</span>
             </div>
           </Link>
           <div className="flex items-center gap-6">
